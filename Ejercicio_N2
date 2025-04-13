@@ -1,0 +1,25 @@
+using System;
+
+class Program {
+    static void Main() {
+        string passwordCorrecta = "1234";  // Puedes cambiar la contraseña correcta
+        int intentos = 0;
+        bool acceso = false;
+
+        while (intentos < 3 && !acceso) {
+            Console.Write("Ingrese la contraseña: ");
+            string passwordIngresada = Console.ReadLine();
+
+            if (passwordIngresada == passwordCorrecta) {
+                Console.WriteLine("Contraseña correcta.");
+                acceso = true;
+            } else {
+                intentos++;
+                Console.WriteLine("Contraseña incorrecta.");
+            }
+        }
+
+        if (!acceso)
+            Console.WriteLine("Ha agotado el número de intentos. Programa terminado.");
+    }
+}
