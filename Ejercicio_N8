@@ -1,0 +1,16 @@
+using System;
+
+class Program {
+    static void Main() {
+        int suma = 0, num;
+        Console.WriteLine("Ingrese números para sumar. Ingrese 0 para terminar.");
+
+        do {
+            Console.Write("Número: ");
+            num = Convert.ToInt32(Console.ReadLine());
+            suma += num;
+        } while (num != 0);
+
+        Console.WriteLine("La sumatoria es: " + suma);
+    }
+}
