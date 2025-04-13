@@ -2,7 +2,7 @@ using System;
 
 class Program {
     static void Main() {
-        string passwordCorrecta = "1234";  // Puedes cambiar la contraseña correcta
+        string passwordCorrecta = "1234" 
         int intentos = 0;
         bool acceso = false;
 
