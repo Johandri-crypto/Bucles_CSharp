@@ -1,0 +1,30 @@
+using System;
+
+class Program {
+    static void Main() {
+        Console.Write("¿Cuántos números vas a ingresar? ");
+        int cantidad = Convert.ToInt32(Console.ReadLine());
+
+        int positivos = 0, negativos = 0, pares = 0, impares = 0;
+
+        for (int i = 1; i <= cantidad; i++) {
+            Console.Write($"Ingrese el número {i}: ");
+            int num = Convert.ToInt32(Console.ReadLine());
+
+            if (num >= 0)
+                positivos++;
+            else
+                negativos++;
+
+            if (num % 2 == 0)
+                pares++;
+            else
+                impares++;
+        }
+
+        Console.WriteLine($"\nPositivos: {positivos}");
+        Console.WriteLine($"Negativos: {negativos}");
+        Console.WriteLine($"Pares: {pares}");
+        Console.WriteLine($"Impares: {impares}");
+    }
+}
