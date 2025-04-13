@@ -1,0 +1,18 @@
+using System;
+
+class Program {
+    static void Main() {
+        Console.Write("¿Cuántos números vas a sumar? ");
+        int cantidad = Convert.ToInt32(Console.ReadLine());
+        int suma = 0;
+
+        for (int i = 1; i <= cantidad; i++) {
+            Console.Write($"Ingrese el número {i}: ");
+            suma += Convert.ToInt32(Console.ReadLine());
+        }
+
+        Console.WriteLine("La sumatoria es: " + suma);
+        if (suma >= 100)
+            Console.WriteLine("La sumatoria es mayor o igual a 100.");
+    }
+}
